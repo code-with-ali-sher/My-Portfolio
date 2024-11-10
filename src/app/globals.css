@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    color: #fff;
+    background-color: black;
+  }
+}
+
+@layer components {
+   .menuLink {
+    @apply cursor-pointer hover:text-[#c5c5c5];
+   }
+
+   .tags {
+    background-color: aqua ;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+   
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+   }
+   .tags:last-child {
+    margin-right: 0;
+
+   }
+
+   .tags:nth-child(2){
+    background-color: #a55eea;
+   }
+   .tags:nth-child(3){
+    background-color: #db9f10;
+   }
+   .tags:nth-child(4){
+    background-color: #eb4db4;
+   }
+}
